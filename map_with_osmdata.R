@@ -30,4 +30,5 @@ map <- osm_basemap(bbox = bb, bg = "gray20") %>%
     add_osm_objects(park, col = "darkseagreen4")
 
 # Show map
-print_osm_map(map)
+print_osm_map(map, filename = "mymap.jpg", 
+              width = 1000, units = "px", dpi = "300")
